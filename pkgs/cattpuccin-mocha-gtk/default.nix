@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.unix;
-    maintainers = [lib.maintainers.xenoxanite];
+    maintainers = [lib.maintainers.angerzen];
   };
 }

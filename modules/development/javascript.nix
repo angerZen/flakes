@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     home.packages = with pkgs; [
       yarn
       nodejs

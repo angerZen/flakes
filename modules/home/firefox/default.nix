@@ -35,7 +35,7 @@
     };
     profiles.default = {
       id = 0;
-      name = "xenoxanite";
+      name = "angerzen";
       search = {
         force = true;
         default = "DuckDuckGo";

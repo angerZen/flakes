@@ -4,7 +4,7 @@
     defaultEditor = true;
   };
   environment.variables.EDITOR = "nvim";
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     programs.neovim = {
       enable = true;
       defaultEditor = true;

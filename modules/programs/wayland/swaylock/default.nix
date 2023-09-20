@@ -3,7 +3,7 @@
   lib,
   ...
 }: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     programs.swaylock = {
       enable = true;
       package = pkgs.swaylock-effects;

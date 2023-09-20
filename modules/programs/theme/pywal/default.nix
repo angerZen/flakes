@@ -4,7 +4,7 @@
     ${pywalfox-native}/bin/pywalfox start
   '';
 in {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     home.packages = with pkgs; [
       pywalfox-native
       pywal

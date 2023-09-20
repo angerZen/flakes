@@ -1,5 +1,5 @@
 {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     xdg.configFile."btop/btop.conf".text = ''
 
                  #? Config file for btop v. 1.2.13

@@ -10,7 +10,7 @@
       });
     })
   ];
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     programs.waybar = {
       enable = true;
       systemd = {

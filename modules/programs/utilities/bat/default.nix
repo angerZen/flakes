@@ -3,7 +3,7 @@
   lib,
   ...
 }: {
-  home-manager.users.xenoxanite = let
+  home-manager.users.angerzen = let
     package = pkgs.bat;
   in {
     programs.bat = {

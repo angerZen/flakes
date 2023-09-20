@@ -1,5 +1,5 @@
 {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     programs.foot = {
       enable = true;
       settings = {

@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     programs.starship = let
       flavour = "mocha";
     in {

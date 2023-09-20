@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   imports = [./theme.nix];
 
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     fonts.fontconfig.enable = true;
     home.packages = with pkgs; [
       (nerdfonts.override {fonts = ["JetBrainsMono"];})

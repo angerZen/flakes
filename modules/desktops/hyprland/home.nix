@@ -3,7 +3,7 @@
   inputs,
   ...
 }: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     systemd.user.targets.hyprland-session.Unit.Wants = ["xdg-desktop-autostart.target"];
 
     home.packages = with pkgs; [
@@ -42,7 +42,7 @@
           ",highrr,auto,auto"
         ];
         source = [
-          "/home/xenoxanite/.cache/wal/colors-hyprland.conf"
+          "/home/angerzen/.cache/wal/colors-hyprland.conf"
         ];
         input = {
           kb_layout = "us";
@@ -220,7 +220,7 @@
           "wl-paste --type text --watch cliphist store &"
           "wl-paste --type image --watch cliphist store &"
           "waybar &"
-          "mako -c /home/xenoxanite/.cache/wal/mako.conf"
+          "mako -c /home/angerzen/.cache/wal/mako.conf"
           "${pkgs.mate.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &"
           "sleep 5 && discord --start-minimized &"
         ];

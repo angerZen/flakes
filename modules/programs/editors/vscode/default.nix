@@ -3,7 +3,7 @@
   inputs,
   ...
 }: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     programs.vscode = {
       enable = true;
       # package = pkgs.vscodium;

@@ -1,6 +1,6 @@
 {
   services = {
-    getty.autologinUser = "xenoxanite";
+    getty.autologinUser = "angerzen";
     gvfs.enable = true;
   };
 }

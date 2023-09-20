@@ -1,5 +1,5 @@
 {...}: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     xdg.configFile."wlogout/icons".source = ./assets;
     programs.wlogout = {
       enable = true;

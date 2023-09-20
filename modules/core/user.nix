@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  users.users.xenoxanite = {
+  users.users.angerzen = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager"];
     shell = pkgs.zsh;

@@ -1,5 +1,5 @@
 {
-  home-manager.users.xenoxanite = {config, ...}: let
+  home-manager.users.angerzen = {config, ...}: let
     inherit (config.lib.formats.rasi) mkLiteral;
   in {
     xdg.configFile."wal/templates/colors-rofi.rasi".text = ''

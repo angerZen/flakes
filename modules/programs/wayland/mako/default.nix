@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  home-manager.users.xenoxanite = {
+  home-manager.users.angerzen = {
     home.packages = [pkgs.libnotify pkgs.mako];
     xdg.configFile."mako/icons".source = ./icons;
     xdg.configFile."wal/templates/mako.conf".text = ''
