@@ -5,6 +5,5 @@
     ./packages
 
     ./scripts
-    ./spotify
   ];
 }

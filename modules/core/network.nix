@@ -1,8 +1,6 @@
 {
   networking = {
-    hostName = "nixos";
+    hostName = "ganymede";
     networkmanager.enable = true;
-    nameservers = ["1.1.1.1"];
-    firewall.enable = false;
   };
 }

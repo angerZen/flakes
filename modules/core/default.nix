@@ -19,7 +19,6 @@
       ./services.nix
       ./system.nix
       ./user.nix
-      ./warp.nix
       ./../desktops/hyprland
 
       # wayland based programs for hyprland
@@ -30,21 +29,13 @@
       ./../programs/wayland/foot
       ./../programs/wayland/rofi
 
-      # Packages for programming
-      ./../development/javascript.nix
-      ./../development/python.nix
-      ./../development/rust.nix
-
       # editors
       ./../programs/editors/vscode
-      ./../programs/editors/neovim
 
       # utility based programs
       ./../programs/utilities/git
       ./../programs/utilities/bat
-      ./../programs/utilities/zsh
       ./../programs/utilities/neofetch
-      ./../programs/utilities/starship
       ./../programs/utilities/btop
 
       # theme based programs

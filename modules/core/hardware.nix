@@ -1,14 +1,24 @@
 {pkgs, ...}: {
   hardware.opengl = {
     enable = true;
-    package = pkgs.mesa.drivers;
     driSupport = true;
     driSupport32Bit = true;
-    package32 = pkgs.pkgsi686Linux.mesa.drivers;
-    extraPackages = [pkgs.amdvlk];
   };
+
+  services.xserver.videoDrivers = ["nvidia"];
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = true;
+    powerManagement.finegrained = false;
+    open = false;
+    nvidiaSettings = true;
+    forceFullCompositionPipeline = true;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
+  };
+
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "performancee";
+    cpuFreqGovernor = "performance";
   };
 }

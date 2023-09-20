@@ -12,16 +12,16 @@
         "editor.cursorSmoothCaretAnimation" = "on";
         "editor.cursorStyle" = "line";
         "editor.fontFamily" = "JetbrainsMono nerd font";
-        "editor.fontSize" = 16;
-        "editor.lineHeight" = 2.3;
+        "editor.fontSize" = 12;
+        "editor.lineHeight" = 1.3;
         "editor.minimap.enabled" = false;
         "editor.mouseWheelZoom" = false;
         "tabnine.experimentalAutoImports" = true;
         "terminal.integrated.fontFamily" = "JetbrainsMono nerd font";
         "editor.fontLigatures" = true;
-        "terminal.integrated.fontSize" = 16;
+        "terminal.integrated.fontSize" = 12;
         "window.menuBarVisibility" = "hidden";
-        "window.zoomLevel" = 1.4;
+        "window.zoomLevel" = 1;
         "workbench.colorTheme" = "Wal";
         "workbench.iconTheme" = "catppuccin-mocha";
         "workbench.productIconTheme" = "material-product-icons";
@@ -71,8 +71,6 @@
           jnoortheen.nix-ide
           pkief.material-product-icons
           catppuccin.catppuccin-vsc-icons
-          tabnine.tabnine-vscode
-          ms-python.python
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {

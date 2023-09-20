@@ -69,7 +69,7 @@
       };
       settings = {
         "general.smoothScroll" = true;
-        "browser.toolbars.bookmarks.visibility" = "never";
+        "browser.toolbars.bookmarks.visibility" = "always";
         "privacy.webrtc.legacyGlobalIndicator" = false;
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "layers.acceleration.force-enabled" = true;
@@ -82,12 +82,8 @@
       };
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
-        languagetool
-        news-feed-eradicator
         tabliss
-        videospeed
         pywalfox
-        duckduckgo-privacy-essentials
       ];
     };
   };

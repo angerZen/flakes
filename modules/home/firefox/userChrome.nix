@@ -102,7 +102,7 @@
           --uc-inactive-tab-width: clamp(50px, 15vw, 200px);
 
           /* if active always shows the tab close button */
-          --show-tab-close-button: none;
+          --show-tab-close-button: -moz-inline-box;
           /* DEFAULT: -moz-inline-box; */
 
           /* if active only shows the tab close button on hover*/
@@ -118,7 +118,7 @@
            | B | U | T | T | O | N | S |
            +---+---+---+---+---+---+---*/
 
-      #back-button,
+      back-button,
       #forward-button,
       #urlbar-zoom-button,
       #PanelUI-button,
