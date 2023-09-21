@@ -57,4 +57,5 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowBroken = true;
   system.stateVersion = "23.05";
+
 }

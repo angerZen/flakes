@@ -18,6 +18,7 @@
     # Multimedia
     mpv
     imv
+    cider
 
     # Nixos
     nix-prefetch-github
