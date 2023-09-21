@@ -29,6 +29,15 @@
       ./../programs/wayland/foot
       ./../programs/wayland/rofi
 
+      # games
+      ./../programs/games
+
+      # qmk
+      ./../programs/qmk
+
+      # music
+      ./../programs/cider
+
       # editors
       ./../programs/editors/vscode
 

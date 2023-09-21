@@ -37,4 +37,7 @@
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="342d", ATTRS{idProduct}=="dfa0", TAG+="uaccess"
   '';
   };
+  
+  systemd.user.startServices = "sd-switch";
+  
 }
