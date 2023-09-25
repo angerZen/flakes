@@ -38,8 +38,7 @@
       settings = {
         "$mainMod" = "SUPER";
         monitor = [
-          ",highres, auto, auto"
-          ",highrr,auto,auto"
+          ",3440x1440@120,0x0,1"
         ];
         source = [
           "/home/angerzen/.cache/wal/colors-hyprland.conf"
@@ -52,7 +51,7 @@
         };
         misc = {
           vfr = true;
-          vrr = 0;
+          vrr = 1;
           layers_hog_keyboard_focus = true;
           disable_autoreload = true;
           disable_hyprland_logo = true;
@@ -75,9 +74,9 @@
           preserve_split = true;
         };
         decoration = {
-          rounding = 1;
-          active_opacity = 0.86;
-          inactive_opacity = 0.83;
+          rounding = 2;
+          active_opacity = 0.85;
+          inactive_opacity = 0.5;
           multisample_edges = true;
           drop_shadow = true;
           shadow_ignore_window = true;
@@ -86,14 +85,14 @@
           shadow_render_power = 3;
           "col.shadow" = "rgba(00000099)";
           blur = {
-            size = 6;
-            passes = 3;
+            size = 3;
+            passes = 2;
             new_optimizations = true;
             ignore_opacity = true;
             noise = "0.18";
             contrast = "1.2";
             brightness = "1.2";
-            xray = true;
+            xray = false;
           };
         };
         animations = {

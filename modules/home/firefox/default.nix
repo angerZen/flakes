@@ -84,6 +84,7 @@
         ublock-origin
         tabliss
         pywalfox
+        onepassword-password-manager
       ];
     };
   };

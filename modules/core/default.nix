@@ -35,9 +35,6 @@
       # qmk
       ./../programs/qmk
 
-      # music
-      ./../programs/cider
-
       # editors
       ./../programs/editors/vscode
 
