@@ -22,7 +22,7 @@
 
     # Nixos
     nix-prefetch-github
-
+    nil
     bettercap
 
     # monkeytype

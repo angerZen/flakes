@@ -5,10 +5,10 @@
     driSupport32Bit = true;
   };
 
-  services.xserver.enable = true;
+  # services.xserver.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  # services.xserver.displayManager.sddm.enable = true;
+  # services.xserver.desktopManager.plasma5.enable = true;
 
   hardware.nvidia = {
     modesetting.enable = true;
@@ -19,11 +19,8 @@
     forceFullCompositionPipeline = true;
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
+  
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  powerManagement = {
-    enable = true;
-    cpuFreqGovernor = "performance";
-  };
 }
