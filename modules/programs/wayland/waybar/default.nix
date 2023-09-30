@@ -266,10 +266,10 @@
           }
 
 
-          #custom-cava-internal{
+          /*#custom-cava-internal{
             padding-left: 10px;
             padding-right: 10px;
-          }
+          }*/
             ";
               };
               xdg.configFile."waybar/weather.py".text = ''
