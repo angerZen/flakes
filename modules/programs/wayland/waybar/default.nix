@@ -340,7 +340,7 @@ tooltip label {
 
 
       def format_temp(temp):
-          return (hour['FeelsLikeC']+"°").ljust(3)
+          return (hour['FeelsLikeF']+"°").ljust(3)
 
 
       def format_chances(hour):
@@ -363,11 +363,11 @@ tooltip label {
 
 
       data['text'] = WEATHER_CODES[weather['current_condition'][0]['weatherCode']] + \
-          " "+weather['current_condition'][0]['temp_C']+"°"
+          " "+weather['current_condition'][0]['temp_F']+"°"
 
       data['tooltip'] = f"<b>{weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°</b>\n"
-      data['tooltip'] += f"Feels like: {weather['current_condition'][0]['FeelsLikeC']}°\n"
-      data['tooltip'] += f"Wind: {weather['current_condition'][0]['windspeedKmph']}Km/h\n"
+      data['tooltip'] += f"Feels like: {weather['current_condition'][0]['FeelsLikeF']}°\n"
+      data['tooltip'] += f"Wind: {weather['current_condition'][0]['windspeedMiles']}Mph\n"
       data['tooltip'] += f"Humidity: {weather['current_condition'][0]['humidity']}%\n"
       for i, day in enumerate(weather['weather']):
           data['tooltip'] += f"\n<b>"
@@ -376,7 +376,7 @@ tooltip label {
           if i == 1:
               data['tooltip'] += "Tomorrow, "
           data['tooltip'] += f"{day['date']}</b>\n"
-          data['tooltip'] += f"⬆️ {day['maxtempC']}° ⬇️ {day['mintempC']}° "
+          data['tooltip'] += f"⬆️ {day['maxtempF']}° ⬇️ {day['mintempF']}° "
           data['tooltip'] += f"🌅 {day['astronomy'][0]['sunrise']} 🌇 {day['astronomy'][0]['sunset']}\n"
           for hour in day['hourly']:
               if i == 0:
