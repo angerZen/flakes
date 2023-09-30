@@ -1,4 +1,3 @@
----
 ## Info
 - Window Manager: Hyprland
 - Bar: Waybar
