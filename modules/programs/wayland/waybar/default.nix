@@ -26,7 +26,7 @@
             "hyprland/workspaces"
             "custom/weather"
             "idle_inhibitor"
-            # "cava"
+            "cava"
             "custom/cava-internal"
           ];
           modules-center = [
@@ -69,7 +69,7 @@
               "10" = "10";
             };
           };
-          "custom/cava" = {
+          "cava" = {
             "exec" = "sleep 1s && cava";
             "tooltip" = false;
           };
