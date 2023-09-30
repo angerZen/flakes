@@ -26,7 +26,7 @@
             "hyprland/workspaces"
             "custom/weather"
             "idle_inhibitor"
-            "cava"
+            # "cava"
             "custom/cava-internal"
           ];
           modules-center = [
