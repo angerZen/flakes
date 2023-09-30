@@ -69,8 +69,8 @@
               "10" = "10";
             };
           };
-          "custom/cava" = {
-            "exec" = "sleep 1s && cava";
+          "custom/cava-internal" = {
+            "exec" = "sleep 1s && cava-internal";
             "tooltip" = false;
           };
           "temperature" = {
@@ -264,7 +264,6 @@
             margin-left: 0px;
             margin-right: 4px;
           }
-
 
           #custom-cava-internal{
             padding-left: 10px;
