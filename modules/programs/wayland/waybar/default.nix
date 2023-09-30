@@ -397,6 +397,6 @@
 
                 print(json.dumps(data))
               '';
-    };
-  });
+    });
+  };
 }
