@@ -23,7 +23,7 @@
           position = "top";
           modules-left = [
             "custom/launcher"
-            "wlr/workspaces"
+            "hyprland/workspaces"
             "custom/weather"
             "idle_inhibitor"
             # "cava"
@@ -51,7 +51,7 @@
               "deactivated" = "";
             };
           };
-          "wlr/workspaces" = {
+          "hyprland/workspaces" = {
             "format" = "{icon}";
             "on-click" = "activate";
             "on-scroll-up" = "hyprctl dispatch workspace e+1";
