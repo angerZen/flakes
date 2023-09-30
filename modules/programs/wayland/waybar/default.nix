@@ -69,7 +69,7 @@
               "10" = "10";
             };
           };
-          "cava" = {
+          "custom/cava" = {
             "exec" = "sleep 1s && cava";
             "tooltip" = false;
           };
