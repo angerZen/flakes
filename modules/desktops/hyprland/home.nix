@@ -75,7 +75,7 @@
         };
         decoration = {
           rounding = 2;
-          active_opacity = 0.85;
+          active_opacity = 0.9;
           inactive_opacity = 0.5;
           multisample_edges = true;
           drop_shadow = true;
@@ -89,8 +89,8 @@
             passes = 2;
             new_optimizations = true;
             ignore_opacity = true;
-            noise = "0.18";
-            contrast = "1.2";
+            # noise = "0.18";
+            contrast = "0.9";
             brightness = "1.2";
             xray = false;
           };

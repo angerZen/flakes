@@ -9,9 +9,11 @@
         background: var(--background);
     }
 
-    * {
-        font-family: "JetbrainsMono nerd font";
+
+    {
+        font-family: "Comfortaa";
     }
+
 
     .peopleColumn-1wMU14{
         background: var(--color0);

@@ -2,10 +2,10 @@
   imports = [./theme.nix];
 
   home-manager.users.angerzen = {
-    fonts.fontconfig.enable = true;
-    home.packages = with pkgs; [
-      (nerdfonts.override {fonts = ["JetBrainsMono"];})
-    ];
+    #  fonts.fontconfig.enable = true;
+    #  home.packages = with pkgs; [
+    #    (nerdfonts.override {fonts = ["JetBrainsMono"];})
+    #  ];
     gtk = {
       enable = true;
       theme = {
@@ -16,7 +16,7 @@
         package = pkgs.papirus-icon-theme;
         name = "Papirus-Dark";
       };
-      font.name = "JetbrainsMono nerd font";
+      font.name = "Comfortaa";
       font.size = 11;
       cursorTheme = {
         name = "Catppuccin-Latte-Dark";

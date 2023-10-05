@@ -8,9 +8,5 @@
       enable = true;
       polkitPolicyOwners = [ "angerzen" ];
     };
-    streamdeck-ui = {
-      enable = true;
-      autoStart = true;
-    };
   };
 }

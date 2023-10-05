@@ -15,6 +15,7 @@
       ./network.nix
       ./pipewire.nix
       ./programs.nix
+      ./fonts.nix
       ./security.nix
       ./services.nix
       ./system.nix
