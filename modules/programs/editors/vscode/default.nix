@@ -12,13 +12,13 @@
         "editor.cursorBlinking" = "expand";
         "editor.cursorSmoothCaretAnimation" = "on";
         "editor.cursorStyle" = "line";
-        "editor.fontFamily" = "FiraCode";
+        "editor.fontFamily" = "Fira Code";
         "editor.fontSize" = 12;
         "editor.lineHeight" = 1.3;
         "editor.minimap.enabled" = false;
         "editor.mouseWheelZoom" = false;
         "tabnine.experimentalAutoImports" = true;
-        "terminal.integrated.fontFamily" = "FiraCode";
+        "terminal.integrated.fontFamily" = "Fira Code";
         "editor.fontLigatures" = true;
         "terminal.integrated.fontSize" = 12;
         "window.menuBarVisibility" = "hidden";

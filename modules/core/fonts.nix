@@ -11,13 +11,13 @@
       material-symbols
 
       # normal fonts
-      (google-fonts.override {fonts = ["comfortaa"];})
+      (google-fonts.override {fonts = ["Comfortaa" "Fira"];})
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
 
       # nerdfonts
-      (nerdfonts.override {fonts = ["FiraCode" "JetBrainsMono"];})
+      # (nerdfonts.override {fonts = ["FiraCode" "JetBrainsMono"];})
     ];
 
     # causes more issues than it solves
@@ -29,7 +29,7 @@
     fontconfig.defaultFonts = {
       serif = ["Noto Serif" "Noto Color Emoji"];
       sansSerif = ["Comfortaa" "Noto Color Emoji"];
-      monospace = ["FiraCode" "Noto Color Emoji"];
+      monospace = ["Fira Code" "Noto Color Emoji"];
       emoji = ["Noto Color Emoji"];
     };
   };
