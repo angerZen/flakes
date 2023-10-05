@@ -25,7 +25,7 @@
         "window.zoomLevel" = 1;
         "workbench.colorTheme" = "Wal";
         "workbench.iconTheme" = "catppuccin-mocha";
-        "workbench.productIconTheme" = "material-product-icons";
+        "workbench.productIconTheme" = "Tabler";
         "workbench.sideBar.location" = "left";
         "workbench.startupEditor" = "none";
         "workbench.statusBar.visible" = false;
@@ -70,7 +70,6 @@
           kamadorueda.alejandra
           bbenoist.nix
           jnoortheen.nix-ide
-          pkief.material-product-icons
           catppuccin.catppuccin-vsc-icons
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
@@ -79,6 +78,12 @@
             name = "wal-theme";
             version = "1.1.2";
             sha256 = "vO9FjzA3+5VTgnBY12eawPCfDzKap07Tgf5jqz/IgN0=";
+          }
+          {
+            publisher = "zguolee";
+            name = "tabler-icons";
+            version = "0.2.2";
+            sha256 = "UxMjXwfL9YMb7nGH41LoAu9R3b4dWdK66+w0tfGy8Lk=";
           }
         ];
     };
