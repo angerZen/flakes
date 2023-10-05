@@ -11,13 +11,13 @@
       material-symbols
 
       # normal fonts
-      (google-fonts.override {fonts = ["Comfortaa" "Fira"];})
+      (google-fonts.override {fonts = ["Comfortaa" "Fira Sans" "Fira Code"];})
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
 
       # nerdfonts
-      # (nerdfonts.override {fonts = ["FiraCode" "JetBrainsMono"];})
+      (nerdfonts.override {fonts = ["JetBrainsMono"];})
     ];
 
     # causes more issues than it solves

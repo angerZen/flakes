@@ -1,4 +1,10 @@
 {
+  pkgs,
+  self,
+  lib,
+  inputs,
+  ...
+}: {
   nixpkgs.overlays = [
     (final: prev: {
       waybar = prev.waybar.overrideAttrs (oldAttrs: {
@@ -134,7 +140,7 @@
 
           @import '../../.cache/wal/colors-waybar.css';
           * {
-            font-family: Comfortaa;
+            font-family: Fira Code;
             font-weight: bold;
             font-size: 14px;
             min-height: 0;

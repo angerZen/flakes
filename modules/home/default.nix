@@ -3,7 +3,6 @@
     ./discord
     ./firefox
     ./packages
-
     ./scripts
   ];
 }

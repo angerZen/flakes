@@ -25,6 +25,12 @@
     nil
     bettercap
 
+    (python311.withPackages (ps:
+      with ps; [
+        requests
+        datetime
+      ]))
+
     # monkeytype
     ttyper
     cbonsai

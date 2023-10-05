@@ -1,4 +1,8 @@
-{pkgs, config, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   hardware.opengl = {
     enable = true;
     driSupport = true;
@@ -17,9 +21,9 @@
     open = false;
     nvidiaSettings = true;
     forceFullCompositionPipeline = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
-  
+
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
