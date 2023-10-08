@@ -28,21 +28,11 @@
       events = [
         {
           event = "before-sleep";
-          command = "${pkgs.swaylock-effects}/bin/swaylock -fF";
+          command = "${pkgs.swaylock-effects}/bin/swaylock";
         }
         {
           event = "lock";
-          command = "${pkgs.swaylock-effects}/bin/swaylock -fF";
-        }
-      ];
-      timeouts = [
-        {
-          timeout = 90;
-          command = "swaylock";
-        }
-        {
-          timeout = 300;
-          command = "systemctl suspend";
+          command = "${pkgs.swaylock-effects}/bin/swaylock";
         }
       ];
     };

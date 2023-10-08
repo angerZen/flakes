@@ -30,7 +30,7 @@
     ];
     wayland.windowManager.hyprland = {
       enable = true;
-      systemdIntegration = true;
+      systemd.enable = true;
       xwayland = {
         enable = true;
         #       hidpi = true;
@@ -222,6 +222,8 @@
           "mako -c /home/angerzen/.cache/wal/mako.conf"
           "${pkgs.mate.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &"
           "sleep 5 && discord --start-minimized &"
+
+          "swayidle -w timeout 600 'swaylock -f -C $dir/swaylock/config' timeout 630 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'"
         ];
       };
       extraConfig = "general:col.active_border = $color2 $color3 $color4 $color5 45deg";

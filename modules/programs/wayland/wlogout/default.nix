@@ -41,7 +41,7 @@
         button {
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 50%;
+            background-size: 25%;
             border: none;
             background-color: rgba(30, 30, 46, 0);
             margin: 5px;
