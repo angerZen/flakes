@@ -5,8 +5,8 @@
 
     @-moz-document url(about:blank), url(about:newtab), url(about:home) {
       body {
-        --pywalfox-font-size: 1rem;
-        --pywalfox-font-size-sm: 0.8rem;
+        --pywalfox-font-size: 0.8rem;
+        --pywalfox-font-size-sm: 0.6rem;
         --pywalfox-accent: var(--lwt-sidebar-highlight-background-color);
         --pywalfox-background: var(--newtab-background-color);
         --pywalfox-background-light: var(--lwt-sidebar-background-color);
@@ -33,7 +33,7 @@
       .top-site-outer .search-topsite[data-fallback]::before, .context-menu > ul > li > a,
       .top-site-outer .default-icon, .top-site-outer .search-topsite {
         font-weight: bold !important;
-        font-size: var(--pywalfox-font-size-sm);
+        font-size: 0.6rem;
       }
 
       /* Bold text to activity card page labels */

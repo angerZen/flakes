@@ -2,8 +2,8 @@
   programs.firefox.profiles.default.userChrome = ''
        /******************** BEGIN PYWALFOX CUSTOM CSS ********************/
     #main-window {
-        --pywalfox-font-size: 13px;
-        --pywalfox-font-size-sm: calc(var(--pywalfox-font-size) * 0.9);
+        --pywalfox-font-size: 0.8rem;
+        --pywalfox-font-size-sm: 0.6rem;
         --pywalfox-background: var(--lwt-accent-color);
         --pywalfox-background-light: var(--arrowpanel-background);
         --pywalfox-text: var(--arrowpanel-color);
@@ -11,7 +11,7 @@
         --pywalfox-unselected-tab-opacity: 0.8;
         --pywalfox-darker-background: rgba(0, 0, 0, 0.4);
         --pywalfox-padding: 4px 8px;
-        font-size: var(--pywalfox-font-size) !important;
+        font-size: 0.8rem !important;
       }
 
       /* Disable default appearance of certain elements to be able to override shadow DOM attributes */
@@ -29,7 +29,7 @@
         -moz-appearance: none !important;
         background-color: var(--pywalfox-background) !important;
         color: var(--pywalfox-text-focus) !important;
-        padding: 4px 4px !important;
+        /*padding: 4px 4px !important;*/
       }
       /* Separators in dropwdown menus */
       menuseparator {
@@ -38,7 +38,7 @@
 
       /* Elements where we set appearance to none, we need to set padding manually */
       notification, button, search-textbox {
-        padding: var(--pywalfox-padding) !important;
+        padding: 4px 4px !important;
       }
 
       /* Fix background color of elements that can not be targeted via the Theme API */
@@ -70,7 +70,7 @@
 
       /* Smaller font size in panel dropdown menus */
       panelmultiview {
-        font-size: var(--pywalfox-font-size-sm) !important;
+        font-size: 0.6rem !important;
       }
 
       /* Change the grey background color seen e.g. when opening a bookmark in a newtab */

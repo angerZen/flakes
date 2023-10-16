@@ -20,7 +20,7 @@ in {
 ; autosens = 1
 ; overshoot = 20
 ; sensitivity = 100
-bars = 12
+bars = 24
 ; bar_width = 2
 ; bar_spacing = 1
 ; bar_height = 32

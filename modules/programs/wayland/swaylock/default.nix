@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  config,
   ...
 }: {
   home-manager.users.angerzen = {
@@ -27,12 +28,23 @@
       enable = true;
       events = [
         {
-          event = "before-sleep";
-          command = "${pkgs.swaylock-effects}/bin/swaylock";
+          event = "after-resume";
+          command = "hyprctl dispatch dpms on";
         }
         {
           event = "lock";
           command = "${pkgs.swaylock-effects}/bin/swaylock";
+        }
+      ];
+      timeouts = [
+        {
+          timeout = 300;
+          command = "swaylock";
+        }
+        {
+          timeout = 600;
+          command = "swaymsg 'output * dpms off'";
+          resumeCommand = "swaymsg 'output * dpms on'";
         }
       ];
     };

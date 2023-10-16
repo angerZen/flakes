@@ -30,13 +30,13 @@
           modules-left = [
             "custom/launcher"
             "hyprland/workspaces"
-            "custom/weather"
             "idle_inhibitor"
             # "cava"
             "custom/cava-internal"
           ];
           modules-center = [
             "clock"
+            "custom/weather"
           ];
           modules-right = [
             "pulseaudio"
@@ -107,7 +107,7 @@
           "clock" = {
             "interval" = 1;
             # "format" = "{:%I:%M %p  %A %b %d}";
-            "format" = "{:%A %d %b - %I:%M %p}";
+            "format" = "{:%A %d %b - %OI:%M %p}";
             "tooltip-format" = "<tt>{calendar}</tt>";
           };
           "memory" = {
@@ -130,8 +130,8 @@
             "return-type" = "json";
           };
           "tray" = {
-            "icon-size" = 12;
-            "spacing" = 5;
+            "icon-size" = 20;
+            "spacing" = 8;
           };
         }
       ];
@@ -144,11 +144,8 @@
             font-weight: bold;
             font-size: 14px;
             min-height: 0;
-            transition-property: background-color;
-            transition-duration: 0.5s;
-            transition: all linear 0.5s;
           }
-          @keyframes blink_red {
+          @keyframes blink {
             to {
               background-color: rgb(242, 143, 173);
               color: rgb(26, 24, 38);
@@ -162,16 +159,10 @@
             animation-direction: alternate;
           }
           window#waybar {
-            background-color: transparent;
-          }
-          window>box {
-            margin-left: 16px;
-            margin-right: 16px;
-            margin-top: 12px;
-            margin-bottom: 0px;
-            border: 3px solid @color2;
-            border-radius: 4px;
-            background-color: @background;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition: all linear 0.5s;
           }
           #workspaces {
             padding: 0px;
@@ -179,13 +170,13 @@
           #workspaces button {
             padding: 4px 6px;
             margin: 4px 2px;
-            border-radius: 50%;
+            border-radius: 5px;
             background-color: @background;
             color: @foreground;
           }
           #workspaces button.active {
             background-color: @color2;
-            border-radius: 2px;
+            border-radius: 5px;
             color: @foreground;
           }
           #workspaces button:hover {
@@ -213,7 +204,13 @@
             padding-right: 6px;
             color: @color2;
           }
-          #clock,
+          #clock {
+            border-radius: 5px;
+            padding: 4px 6px;
+            margin: 4px 2px;
+            font-family: Comfortaa;
+            color: @foreground;
+          }
           #memory,
           #temperature,
           #custom-weather,
@@ -240,10 +237,10 @@
 
           #memory, #cpu, #clock, #pulseaudio, #network {
             background-color: @color2;
-            border-radius: 2px;
+            border-radius: 5px;
             padding: 0px 8px;
             margin: 4px;
-            color: @background;
+            color: @foreground;
           }
 
           #tray {
@@ -251,22 +248,22 @@
           }
 
           #memory {
-            border-radius: 2px 0px 0px 2px;
+            border-radius: 5px;
             margin-right: 0px;
           }
 
           #cpu {
-            border-radius: 0px 2px 2px 0px;
+            border-radius: 5px;
             margin-left: 0px;
           }
 
           #pulseaudio {
-            border-radius: 2px 0px 0px 2px;
+            border-radius: 5px;
             margin-right: 0px;
           }
 
           #pulseaudio.microphone {
-            border-radius: 0px 2px 2px 0px;
+            border-radius: 5px;
             margin-left: 0px;
             margin-right: 4px;
           }
@@ -274,6 +271,14 @@
           #custom-cava-internal {
             padding-left: 10px;
             padding-right: 10px;
+          }
+          #custom-weather {
+            padding: 4px 6px;
+            margin: 4px 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: @color2;
+            border-radius: 5px;
           }
             ";
     };

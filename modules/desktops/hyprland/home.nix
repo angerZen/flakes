@@ -56,18 +56,19 @@
           disable_autoreload = true;
           disable_hyprland_logo = true;
           always_follow_on_dnd = true;
-          animate_manual_resizes = false;
+          animate_manual_resizes = true;
           enable_swallow = true;
           focus_on_activate = true;
           disable_splash_rendering = true;
-          animate_mouse_windowdragging = false;
+          animate_mouse_windowdragging = true;
         };
         general = {
-          gaps_in = 8;
-          gaps_out = 16;
-          border_size = 3;
+          gaps_in = 4;
+          gaps_out = 8;
+          border_size = 2;
           "col.inactive_border" = "rgba(000000ee)";
           apply_sens_to_raw = 1;
+          resize_on_border = true;
         };
         dwindle = {
           pseudotile = true;
@@ -75,7 +76,7 @@
         };
         decoration = {
           rounding = 2;
-          active_opacity = 0.9;
+          active_opacity = 0.95;
           inactive_opacity = 0.5;
           multisample_edges = true;
           drop_shadow = true;
@@ -90,8 +91,8 @@
             new_optimizations = true;
             ignore_opacity = true;
             # noise = "0.18";
-            contrast = "0.9";
-            brightness = "1.2";
+            contrast = "1";
+            brightness = "0.9";
             xray = false;
           };
         };
@@ -114,18 +115,19 @@
           "$mainMod, Space, togglefloating,"
           "$mainMod, P, pseudo,"
           "$mainMod, Y, pin,"
-          "$mainMod, T, togglesplit,"
+          "$mainMod, S, togglesplit,"
           "$mainMod, C, exec, hyprctl dispatch centerwindow none"
           "SUPER, M, movetoworkspace, special"
           "$mainMod SHIFT, M, togglespecialworkspace"
           "$mainMod, mouse_down, workspace, e-1"
           "$mainMod, mouse_up, workspace, e+1"
           # shortcuts bindings
-          "$mainMod, Return, exec, foot"
+          "$mainMod, T, exec, foot"
           "$mainMod SHIFT, Return, exec, foot --fullscreen"
-          "$mainMod, Z, exec, pkill rofi || rofi -show drun"
+          "$mainMod, R, exec, pkill rofi || rofi -show drun"
           "$mainMod SHIFT, Z, exec, pkill rofi || rofi -show run"
           "$mainMod, W, exec, pkill rofi || wallpaper-picker"
+          "$mainMod SHIFT, W, exec, pkill rofi || random-wall"
           "SUPER, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
           "$mainMod, X, exec, pkill wlogout || launch-wlogout"
           "$mainMod, B, exec, pkill -SIGUSR1 .waybar-wrapped"
@@ -222,8 +224,6 @@
           "mako -c /home/angerzen/.cache/wal/mako.conf"
           "${pkgs.mate.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &"
           "sleep 5 && discord --start-minimized &"
-
-          "swayidle -w timeout 600 'swaylock -f -C $dir/swaylock/config' timeout 630 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'"
         ];
       };
       extraConfig = "general:col.active_border = $color2 $color3 $color4 $color5 45deg";
