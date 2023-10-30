@@ -78,7 +78,7 @@
           rounding = 2;
           active_opacity = 0.95;
           inactive_opacity = 0.5;
-          multisample_edges = true;
+          # multisample_edges = true;
           drop_shadow = true;
           shadow_ignore_window = true;
           shadow_offset = "0 8";
