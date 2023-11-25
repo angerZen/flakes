@@ -164,6 +164,12 @@
             transition-duration: 0.5s;
             transition: all linear 0.5s;
           }
+          .modules-right {
+            margin-right: 15px;
+          }
+          .modules-left {
+            margin-left: 15px;
+          }
           #workspaces {
             padding: 0px;
           }
@@ -342,7 +348,7 @@
       data = {}
 
 
-      weather = requests.get("https://wttr.in/mymensingh?format=j1").json()
+      weather = requests.get("https://wttr.in/?format=j1").json()
 
 
       def format_time(time):

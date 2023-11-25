@@ -1,5 +1,7 @@
 {
   services = {
+    flatpak.enable = true;
+    dbus.enable = true;
     getty.autologinUser = "angerzen";
     gvfs.enable = true;
     udev.extraRules = ''
@@ -35,7 +37,7 @@
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="314b", ATTRS{idProduct}=="0106", TAG+="uaccess"
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="28e9", ATTRS{idProduct}=="0189", TAG+="uaccess"
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="342d", ATTRS{idProduct}=="dfa0", TAG+="uaccess"
-  '';
+    '';
     avahi = {
       nssmdns = true;
       enable = true;
