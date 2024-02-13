@@ -45,6 +45,16 @@
   time.hardwareClockInLocalTime = false;
   i18n.defaultLocale = "en_US.UTF-8";
 
+  services.xserver = {
+    enable = true;
+    displayManager.autoLogin = {
+      enable = true;
+      user = "angerzen";
+    };
+  };
+  # To prevent getting stuck at shutdown
+  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
+
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowBroken = true;
   system.stateVersion = "23.05";

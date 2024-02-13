@@ -224,6 +224,8 @@
           "mako -c /home/angerzen/.cache/wal/mako.conf"
           "${pkgs.mate.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &"
           "sleep 5 && discord --start-minimized &"
+          "exec systemctl --user import-environment PATH"
+          "systemctl --user restart xdg-desktop-portal.service"
         ];
       };
       extraConfig = "general:col.active_border = $color2 $color3 $color4 $color5 45deg";
