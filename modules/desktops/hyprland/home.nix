@@ -14,6 +14,7 @@
 
       # Wallpaper deamon
       swww
+      waypaper
 
       # Screenshot and screen-record utility
       inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
@@ -26,7 +27,7 @@
       #Security
       mate.mate-polkit
 
-      eww-wayland
+      eww
     ];
     wayland.windowManager.hyprland = {
       enable = true;
@@ -127,7 +128,7 @@
           "$mainMod, R, exec, pkill rofi || rofi -show drun"
           "$mainMod SHIFT, Z, exec, pkill rofi || rofi -show run"
           "$mainMod, W, exec, pkill rofi || wallpaper-picker"
-          "$mainMod SHIFT, W, exec, pkill rofi || random-wall"
+          # "$mainMod SHIFT, W, exec, pkill rofi || reload"
           "SUPER, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
           "$mainMod, X, exec, pkill wlogout || launch-wlogout"
           "$mainMod, B, exec, pkill -SIGUSR1 .waybar-wrapped"
@@ -217,6 +218,7 @@
         exec-once = [
           "hyprctl setcursor Catppuccin-Latte-Dark 16 &"
           "exec-once=dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+          "exec-once=waypaper --restore"
           "sleep 1 && swww init && sleep 1 && swaylock && notify-send 'Hey $USER, Welcome back' &"
           "wl-paste --type text --watch cliphist store &"
           "wl-paste --type image --watch cliphist store &"

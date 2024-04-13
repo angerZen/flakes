@@ -22,11 +22,6 @@
       auto-optimise-store = true;
       experimental-features = ["nix-command" "flakes"];
     };
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 3d";
-    };
   };
 
   i18n.extraLocaleSettings = {
@@ -45,13 +40,11 @@
   time.hardwareClockInLocalTime = false;
   i18n.defaultLocale = "en_US.UTF-8";
 
-  services.xserver = {
+  services.displayManager.autoLogin = {
     enable = true;
-    displayManager.autoLogin = {
-      enable = true;
-      user = "angerzen";
-    };
+    user = "angerzen";
   };
+
   # To prevent getting stuck at shutdown
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 

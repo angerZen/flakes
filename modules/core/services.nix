@@ -1,6 +1,5 @@
 {
   services = {
-    flatpak.enable = true;
     dbus.enable = true;
     gvfs.enable = true;
     udev.extraRules = ''
